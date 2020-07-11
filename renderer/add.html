@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+    />
+    <title>Add Todos</title>
+  </head>
+  <body>
+    <form id="todoForm">
+      <div class="form-group">
+        <label for="add-input" class="form-label">Todo</label>
+        <input
+          type="text"
+          name="add-input"
+          id="add-input"
+          class="form-input"
+          placeholder="I have to..."
+        />
+      </div>
+      <button class="btn">Add Todo</button>
+    </form>
+    <script src="./add.js"></script>
+  </body>
+</html>
